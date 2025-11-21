@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Market - Sua Loja de Roupas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      background: #222;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    .banner {
+      height: 380px;
+      background: url("https://images.unsplash.com/photo-1521335629791-ce4aec67dd47?auto=format&fit=crop&w=1500&q=80");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      font-size: 38px;
+      font-weight: bold;
+    }
+
+    h2.title {
+      text-align: center;
+      margin: 40px 0 20px 0;
+      font-size: 28px;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      padding: 20px;
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .produto {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .produto:hover {
+      transform: translateY(-5px);
+    }
+
+    .produto img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+
+    .info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .info h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .info p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .info button {
+      background: #111;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .info button:hover {
+      background: #ffcc00;
+      color: black;
+    }
+
+    .contato {
+      max-width: 400px;
+      margin: 50px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .contato h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .contato input, .contato textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 12px;
+      border: 1px solid #aaa;
+      border-radius: 6px;
+    }
+
+    .contato button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background: #111;
+      color: white;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fashion Market</h1>
+    <p>Sua Loja Completa de Roupas</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section class="banner" id="inicio">
+    Nova Coleção 2025 🌟
+  </section>
+
+  <h2 class="title" id="produtos">Produtos em Destaque</h2>
+
+  <section class="produtos">
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd47?auto=format&fit=crop&w=800&q=80">
+      <div class="info">
+        <h3>Camiseta Premium</h3>
+        <p>R$ 59,90</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80">
+      <div class="info">
+        <h3>Vestido Floral</h3>
+        <p>R$ 89,90</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=800&q=80">
+      <div class="info">
+        <h3>Jaqueta Jeans</h3>
+        <p>R$ 129,90</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+
+    <div class="produto">
+      <img src="https://images.unsplash.com/photo-1542060748-10c28b62716b?auto=format&fit=crop&w=800&q=80">
+      <div class="info">
+        <h3>Tênis Casual</h3>
+        <p>R$ 149,90</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="contato" id="contato">
+    <h2>Fale Conosco</h2>
+    <input type="text" placeholder="Seu nome">
+    <input type="email" placeholder="Seu e-mail">
+    <textarea placeholder="Mensagem" rows="4"></textarea>
+    <button>Enviar</button>
+  </div>
+
+  <footer>
+    © 2025 Fashion Market - Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
