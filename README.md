@@ -73,7 +73,7 @@
     }
 
     .produto {
-      background: white;
+      <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd47?auto=format" alt="Camiseta">background: white;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       overflow: hidden;
